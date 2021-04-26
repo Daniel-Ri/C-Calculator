@@ -1,2 +1,2 @@
 # C-Calculator
-For understanding
+For understanding version control and collaboration using github
