@@ -1,7 +1,7 @@
 #include "calculator.hpp"
 
 float tambah(float x, float y) {
-    return 0;
+    return x + y;
 }
 
 float kurang(float x, float y) {
