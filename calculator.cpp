@@ -5,7 +5,7 @@ float tambah(float x, float y) {
 }
 
 float kurang(float x, float y) {
-    return x - y;
+    return 0;
 }
 
 float kali(float x, float y) {
