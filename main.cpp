@@ -1,32 +1,30 @@
 /*File utama program CPP Calculator*/
 #include <stdio.h>
-#include "tambah.h"
-#include "kurang.h"
-#include "kali.h"
-#include "bagi.h"
+#include "calculator.hpp"
 
 int main() {
-    //kamus
-    float A, B, Hasil;
-    char  C;
-    //algoritma
-    printf("nilai pertama: ");
-    scanf("%f", &A);
-    printf("nilai kedua  : ");
-    scanf("%f", &B);
-    printf("Operasi: ( + - * / )");
-    scanf("%c", &C);
-    
-    if (C=="+"){
-        Hasil = tambah(A,B);
-    }else if(C=="-"){
-        Hasil = kurang(A,B);
-    }else if(C=="*"){
-        Hasil = kali(A,B);
-    }else if(C=="/"){
-        Hasil = bagi(A,B);
-    }else{
-        printf("input salah")
+    char Op;
+    double first, second ;
+    printf("Enter an operator (+, -, *,): " );
+    scanf("%c", &Op );
+    printf("Enter two operands: ");
+    scanf("%lf %lf", &first, &second );
+
+    switch (Op) {
+    case '+':
+        printf("%.1lf + %.1lf = %.1lf", first, second, tambah(first, second));
+        break;
+    case '-':
+        printf("%.1lf - %.1lf = %.1lf", first, second, kurang(first, second));
+        break;
+    case '*':
+        printf("%.1lf * %.1lf = %.1lf", first, second, kali(first, second));
+        break;
+    case '/':
+        printf("%.1lf / %.1lf = %.1lf", first, second, bagi(first, second));
+        break;
+    default:
+        printf("Wrong input");
     }
 
     return 0;
