@@ -1,6 +1,9 @@
 /*File utama program CPP Calculator*/
 #include <stdio.h>
+<<<<<<< HEAD
 #include "calculator.hpp"
+=======
+>>>>>>> e49e9291b9a74a048742def0727c0e32c9c5cdfc
 
 int main() {
     char Op;
@@ -11,6 +14,7 @@ int main() {
     scanf("%lf %lf", &first, &second );
 
     switch (Op) {
+<<<<<<< HEAD
     case '+':
         printf("%.1lf + %.1lf = %.1lf", first, second, tambah(first, second));
         break;
@@ -25,6 +29,9 @@ int main() {
         break;
     default:
         printf("Wrong input");
+=======
+
+>>>>>>> e49e9291b9a74a048742def0727c0e32c9c5cdfc
     }
 
     return 0;
