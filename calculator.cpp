@@ -9,7 +9,7 @@ float kurang(float x, float y) {
 }
 
 float kali(float x, float y) {
-    return 0;
+    return x*y;
 }
 
 float bagi(float x, float y) {
